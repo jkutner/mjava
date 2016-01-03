@@ -1,13 +1,7 @@
-# mruby-jvm [![Build Status](https://travis-ci.org/jkutner/mruby-jvm.svg)](https://travis-ci.org/jkutner/mruby-jvm)
+# mjava
 
-mruby gem for running JVM processes
-
-## Usage
-
-* In Process: `JavaSupport.exec_java(java_opts, java_class, program_opts)`
-* Out of Process: `JavaSupport.system_java(java_opts, java_class, program_opts)`
-
-Also generates an `mruby-jvm` executable that is mainly for testing.
+A small Java launcher. This binary knows how to find a JVM installed on any machine, even
+if `JAVA_HOME` is not set.
 
 ## Building
 
