@@ -1,3 +1,4 @@
 mruby/
 .DS_Store
 Main.*
+/target
