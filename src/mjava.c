@@ -21,7 +21,7 @@ static mrb_value
 mrb_file_s_chmod2(mrb_state *mrb, mrb_value klass)
 {
 #if defined(_WIN32) || defined(_WIN64)
-  printf("windows");
+  // do nothing
 #else
   mrb_value a, b;
   const char *mode, *file;
