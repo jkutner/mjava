@@ -2,7 +2,8 @@ compile: &defaults
   build: .
   volumes:
     - .:/home/mruby/code:rw
-    - ../mruby-jvm:/home/mruby/mruby-jvm
+    #- ../mruby-jvm:/home/mruby/mruby-jvm
+    #- ../mruby-miniz:/home/mruby/mruby-miniz
   command: rake compile
 test:
   <<: *defaults
