@@ -2,3 +2,4 @@ mruby/
 .DS_Store
 Main.*
 /target
+/tmp
