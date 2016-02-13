@@ -1,3 +1,7 @@
+def debug(msg)
+  puts msg if ENV['MJAVA_DEBUG']
+end
+
 def __main__(argv)
   command = argv.shift
 
@@ -30,8 +34,8 @@ def __main__(argv)
     end
   end
 
-  puts "mjava_home = #{mjava_home}"
-  puts "mjava_zip  = #{mjava_zip}"
+  debug "mjava_home = #{mjava_home}"
+  debug "mjava_zip  = #{mjava_zip}"
 
   if mjava_home
     JavaSupport.custom_java(mjava_home, argv)
