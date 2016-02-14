@@ -22,6 +22,9 @@ def __main__(argv)
     elsif arg == "--mjava-in-proc"
       mjava_in_proc = true
       true
+    elsif arg == "--mjava-version"
+      puts "mjava #{MJava::VERSION}"
+      true
     else
       false
     end
